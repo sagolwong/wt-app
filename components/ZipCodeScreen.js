@@ -9,10 +9,12 @@ const availableZipItems = [
     { place: 'Chonburi', code: '20000' },
    ]
 const ZipItem = ({place, code, navigate}) => (
-    <View style={styles.zipItem}>
-      <Text style={styles.zipPlace}>{place}</Text>
-      <Text style={styles.zipCode}>{code}</Text>
-    </View>
+    
+      <View style={styles.zipItem}>
+        <Text style={styles.zipPlace}>{place}</Text>
+        <Text style={styles.zipCode}>{code}</Text>
+      </View>
+    
 )
 const _keyExtractor = item => item.code
 
@@ -53,5 +55,5 @@ const styles = StyleSheet.create({
         fontSize: 20 ,
         paddingRight: 20 ,
     },
-    header:{ paddingLeft: 115 }
+    header:{ paddingLeft: 30 ,fontSize: 20 }
 });
