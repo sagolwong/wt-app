@@ -8,7 +8,9 @@ export default class WeatherScreen extends React.Component{
     static navigationOptions = ({navigation}) =>{
         return{
             headerTitle: (<Text style={styles.header}>Weather</Text>),
-            
+            headerRight: (
+                <Button  title="Change zip" onPress={() => navigation.navigate('ZipCode')}/>
+            )
         }
     }
     render(){
@@ -20,5 +22,4 @@ export default class WeatherScreen extends React.Component{
 }
 const styles = StyleSheet.create({
     header: { paddingLeft: 135 ,fontSize: 20 },
-    
 });
